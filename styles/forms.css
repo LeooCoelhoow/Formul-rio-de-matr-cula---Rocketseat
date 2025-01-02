@@ -11,6 +11,10 @@ fieldset {
   gap: 1.5rem;
 }
 
+textarea {
+  width: 100%;
+}
+
 legend {
   font: 600 1rem/1.25 var(--font-family);
   margin-bottom: 1.5rem;
