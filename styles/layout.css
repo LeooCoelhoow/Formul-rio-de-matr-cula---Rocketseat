@@ -26,6 +26,11 @@ main {
     font: 600 1.5rem/1.25 var(--font-family);
     margin-bottom: .5rem;
   }
+
+  & .container-buttons {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 aside {
@@ -46,6 +51,73 @@ aside {
 
     & span {
       color: var(--text-highlight);
+    }
+  }
+}
+
+@media (width < 80em) { /* Para mobile */
+  #app {
+    display: flex;
+    flex-direction: column;
+
+    height: 100vh;
+    
+    & aside {
+       background-color: var(--surface-secondary);
+       padding: 1.5rem;
+      
+      
+      & .aside-container {
+        max-width: 31rem;
+      
+         & > img { /* Se refere ao primeiro nível de imagem do aside-container */
+          margin-top: 2rem;
+         }
+      }
+      
+      & h2 {
+        font: 600 2.5rem/1.25 var(--font-family);
+         margin-bottom: .5rem;
+      
+        & span {
+          color: var(--text-highlight);
+        }
+      }
+    }
+  }
+
+  #header-mobile {
+    background-color: var(--surface-secondary);
+    padding: 1.5rem;
+
+    & .header-mobile-container {
+      height: 20.25rem;
+      
+      & > img { /* Se refere ao primeiro nível de imagem do aside-container */
+        margin-top: 2rem;
+      }
+    }
+  }
+
+  main {
+    overflow: auto;
+    padding: 1.5rem;
+  
+    & .back {
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+      margin-bottom: 1.5rem;
+    }
+  
+    & h1 {
+      font: 600 1.5rem/1.25 var(--font-family);
+      margin-bottom: .5rem;
+    }
+
+    & .actions-wrapper {
+      display: flex;
+      flex-direction: column;
     }
   }
 }

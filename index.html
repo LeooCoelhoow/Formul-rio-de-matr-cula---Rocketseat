@@ -14,8 +14,18 @@
 </head>
 <body>
   <div id="app">
+    <div id="header-mobile" class="mobile-only">
+      <div class="header-mobile-container">
+        <header>
+          <img src="assets/logo.svg" alt="logo Estrelas do Amanhã">
+        </header>
+
+        <img src="assets/Illustration.svg" alt="Illustration da prof com crianças">        
+      </div>
+    </div>
+
     <main>  <!-- main>.main-container -->
-      <div class="main-container">
+      <div class="main-container"> <!-- second-div -->
         <div class="back">
           <img src="assets/icons/arrow-left-02.svg" alt="ícone de voltar">
           <span>Voltar</span>
@@ -228,34 +238,38 @@
             <label>Declaro que li e concordo com os <strong>Termos e Condições</strong> e com a <strong>Política de Privacidade</strong> da escola Estrela do Amanhã.</label>
           </div>
 
-          <div class="actions-wrapper">
-            <button class="btn-secondary" type="button">
-              Salvar respostas
-            </button>
-
-            <button class="btn-primary" type="submit">
-              Fazer matrícula
-            </button>
+          <div class="container-buttons">
+            <div class="actions-wrapper">
+              <button class="btn-secondary" type="button">
+                Salvar respostas
+              </button>
+  
+              <button class="btn-primary" type="submit">
+                Fazer matrícula
+              </button>
+            </div>
           </div>
 
         </form>
       </div>
     </main>
 
-    <aside>
-      <div class="aside-container">
+    <aside class="desktop-only">
+      <div class="aside-container"> <!-- first-div -->
         <header>
           <img src="assets/logo.svg" alt="logo Estrelas do Amanhã">
-          <h2>
-            Porque cada momento de 
-            <span>
-              aprendizado
-            </span> 
-            conta
-          </h2>
-          <p>
-            Inscreva seu filho em nossa escola e veja-o florescer em um ambiente acolhedor, seguro e estimulante.
-          </p>
+          <div class="desktop-only">
+            <h2>
+              Porque cada momento de 
+              <span>
+                aprendizado
+              </span> 
+              conta
+            </h2>
+            <p>
+              Inscreva seu filho em nossa escola e veja-o florescer em um ambiente acolhedor, seguro e estimulante.
+            </p>
+          </div>
         </header>
 
         <img src="assets/Illustration.svg" alt="Illustration da prof com crianças">
